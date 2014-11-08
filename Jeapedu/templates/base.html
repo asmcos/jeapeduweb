@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{tag1|default:"智普教育-首页"}}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link type="text/css" rel="stylesheet" href="/static/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.jslides.css" media="screen" />
+<script type="text/javascript" src="/static/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.jslides.js"></script>
+<style>
+<!-- 
+/* jQuery jcImgScroll css */
+.jcImgScroll { position:relative; height:495px; margin-top:30px;}
+.jcImgScroll li { border:1px solid #ccc; }
+.jcImgScroll li a { background:#fff; display:block; height:493px;  }
+.jcImgScroll li.loading a { background:#fff url(/static/images/loading.gif) no-repeat center center;} 
+.jcImgScroll li img,.jcImgScroll li,.jcImgScroll em,.jcImgScroll dl { display:none; border:0 none;}
+.jcImgScroll em.sPrev { background:url(/static/images/arrow-left.png) no-repeat left center; }
+.jcImgScroll em.sNext { background:url(/static/images/arrow-right.png) no-repeat right center;}
+.jcImgScroll dl dd { background:url(/static/images/NumBtn.png) no-repeat 0 bottom; text-indent:-9em; }
+.jcImgScroll dl dd:hover,.jcImgScroll dl dd.curr { background-position:0 0; }
+-->
+</style>
+
+<script src="static/js/jQuery-1.7.1.js" language="javascript" type="text/javascript"></script>
+<script src="static/js/jQuery-easing.js" language="javascript" type="text/javascript"></script>
+<script src="static/js/jQuery-jcImgScroll.js" language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+<!-- 
+$(function(){
+    $("#demo1").jcImgScroll({
+        
+    });
+    $("#demo2").jcImgScroll({
+        count : 7
+    });
+    $("#demo3").jcImgScroll({
+        arrow : {
+            width:110,  
+            height:495,
+            x:220,
+            y:0
+        },
+        count : 3,
+        offsetX : 140,
+        NumBtn : true,
+        title:false
+    });
+});
+-->
+</script>
+</head>
+
+<body>
+<div class="top width100">
+	<div class="width965 marginauto">
+        <div class="nav fright  fbule1">
+        	<ul>
+				<li><a href="/">{{tag2|default:"首页"}}</a></li>
+            	<li><a href="/course/page=1/">{{tag3|default:"主要课程"}}</a></li>
+                <li><a href="/teachers/page=1/">{{tag4|default:"师资队伍"}}</a></li>
+                <li><a href="/#students">{{tag5|default:"学员风采"}}</a></li>
+                <li><a href="/#news">{{tag6|default:"行业新闻"}}</a></li>
+				<li><a href="/#students_works">{{tag7|default:"作品展示"}}</a></li>
+                <li><a href="/#enterprise">{{tag8|default:"合作企业"}}</a></li>
+            </ul>
+        </div>
+        <div class="logo"><a href="#"><img src="{{tagimg32|default:'/static/images/logo.jpg'}}" /></a></div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+{% block content %}{% endblock %}
+
+<div class="clear"></div>
+
+
+<div class="bot width100">
+    <span>{{tag29|default:"版权所有"}}&nbsp;&nbsp;&nbsp;&nbsp;{{tag30|default:"智普教育"}}<br>
+{{tag31|default:"地址：北京市海淀区上地八维一校区，综合办公楼C区4，一层（爱心英语幼儿园院内）"}}</span>
+
+</div>
+
+</body>
+</html>
