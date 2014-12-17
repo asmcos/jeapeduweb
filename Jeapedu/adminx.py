@@ -26,13 +26,13 @@ from xadmin.views.base import CommAdminView
 # admin.site.register(News,News_admin)
 # admin.site.register(Enterprise,Enterprise_admin)
 class Course_admin(object):
-    list_display =('photo','title','startdate',)
+    list_display =('title','startdate',)
 
 class Teachers_admin(object):
-    list_display =('photo','name','kw',)
+    list_display =('name','kw',)
 
 class Students_admin(object):
-    list_display =('photo','name','kw',)
+    list_display =('name','kw',)
 
 class News_admin(object):
     list_display =('photo','title',)
